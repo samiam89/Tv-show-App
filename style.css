@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(8,9,31);
+ }
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+.must-pick {
+  font-size: 25px;
+  text-align: center;
+  color: red;
+}
+
+.next-question, .finished, .title, .start, .quiz, .restart, .give-up, .submit, .feedback-wrong, .feedback-correct, .score {
+  border: 3px solid black;
+  width: 55%;
+  padding: 10px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  background-color: green;
+  color: white;
+  display: block;
+}
+
+.next-question, .finished, .title, .start, .restart, .give-up, .feedback-wrong, .feedback-correct, .must-pick {
+	 	width: 75%
+}
+
+
+.start, .restart, .give-up, .submit, .next-question, .finished, .feedback-wrong, .feedback-correct, .must-pick .score {
+	width: 20%;
+}
+
+.output {
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	width: 85%
+}
+
+.submit {
+	background: blue;
+	width: 55%;
+}
+
+.restart {
+	display: hidden;
+}
+.score {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  
+}
+
+.finished {
+  font-size: 30px;
+  width: 50%;
+}
+
+
+
+.quiz {
+	display: none;
+}
+
+input[type="radio"]{
+	/* display: none; */
+	/* align-content: center; */
+	/* width: 40% */
+}
+
+.rightAnswer {
+	display: block;
+	cursor: pointer;
+	background-color: blue;
+	padding: 1em;
+	margin: 1em auto 1em auto;
+	width: 60%;
+	font-size: 15px;
+	border-radius: 8px;
+}
+
+input[type="radio"]:checked + label{
+	background-color: red;
+	font-weight: bold;
+	border-radius: 8px;
+	font-size: 15px;
+}
+
+
+
+
+.feedback-wrong, .feedback-correct, .must-pick {
+	display: none;
+}
+
+.feedback-wrong {
+	font-size: 30px;
+	font-weight: bold;
+	background: #b50a0a;
+}
+
+.feedback-correct {
+	font-size: 30px;
+	font-weight: bold;
+	background: purple;
+}
+
+
+@media (min-width: 700px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-nav-list-item {
+    float:left;
+    width: 25%;
+  }
+  /*
+  * A grid can do this math for you!
+  */
+  .box {
+    width: 47%;
+    float: left;
+  }

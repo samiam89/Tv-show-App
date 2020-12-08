@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title role="Banner">90's Tv Shows</title>
+	<meta charset="utf-8" name="description" content=
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<main role="main">
+	<body>
+
+
+		<header class="title">
+			<h1>A Quiz About Tv Shows in the 90's</h1>
+			<h2>How well do you know sit-coms?</h2>
+		</header>
+	
+		<button id="start" type="button" class="start" >START THE SHOW</button>
+
+
+		<p class="feedback-wrong" id="feedback-wrong">That is wrong. The correct answer is <span id="show-right-answer"></span> </p>
+
+		<p class="feedback-correct" id="feedback-correct" >You are correct!</p>
+
+		<button id="next-question" type="button" class="next-question">Next Question</button>
+
+		<p class="must-pick" id="must-pick">You Must Select an Answer!!!</p>
+
+		<p class="finished" id="finished">You Are Finished! Thanks For Playing A Quiz About TV Shows! </p>
+		
+		<div class="quiz" id="quiz" role="quiz-body" tabindex="0">
+			<form class="output" id="question-output" role="form" tabindex="0">
+        <fieldset id="answers" role="answers">
+  				</fieldset>
+  				<button id='submit' type="submit"
+          role="submit-button-for-answers"  class="submit">Submit Answer
+  				</button>
+			</form>
+		</div>
+	
+		<div class="score" id="score" role="score-for-quiz">
+			<p class="qn">Question Number: <span id="q-num" class="q-num"></span></p>
+			<p class="ts">Your total score is: <span id="results" class="results"></span></p>
+		</div>
+
+	<button id="restart" type="button" class="restart" role="restart-quiz">RESTART</button>
+
+	<button id="giveUp" type="button" class="give-up" role="give-up-on-quiz">I GIVE UP!!</button>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="database.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+
+	</body>
+</main>
+
+</html>
